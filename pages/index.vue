@@ -3,7 +3,7 @@
     class="w-full h-screen flex flex-col items-center justify-center gap-5 p-2"
   >
     <h1
-      class="text-6xl font-semibold tracking-wide text-center text-pretty bg-gradient-to-t from-[#c7d2fe] to-[#8678f9] bg-clip-text text-xl text-transparent"
+      class="text-5xl font-semibold tracking-wide text-center text-pretty bg-gradient-to-t from-[#c7d2fe] to-[#8678f9] bg-clip-text text-xl text-transparent"
     >
       Turn Words into Connections
     </h1>
