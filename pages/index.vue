@@ -9,7 +9,7 @@
         Turn Words into Connections
       </h1>
       <span
-        class="w-10/12 md:w-3/6 text-2xl font-light text-slate-600 text-center text-pretty italic"
+        class="text-xl w-10/12 md:w-3/6 md:text-2xl font-light text-slate-600 text-center text-balance italic"
       >
         Unlock AI-powered posts that amplify your professional voice.
       </span>

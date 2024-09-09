@@ -35,7 +35,7 @@
           <textarea
             v-model="context"
             required
-            class="bg-inherit w-full h-3/4 p-3 text-md tracking-tight"
+            class="bg-inherit w-full h-3/4 p-3 text-md tracking-tight text-balance"
             placeholder="Provide some context"
             :readonly="gotResult"
           ></textarea>
