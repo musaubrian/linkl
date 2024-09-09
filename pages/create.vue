@@ -92,18 +92,20 @@
             </div>
             <div
               v-else
-              class="w-9/12 md:w-4/6 h-full inline-flex items-center justify-between"
+              class="w-11/12 md:w-4/6 h-full inline-flex items-center justify-around md:justify-between"
             >
               <Select required v-model="mode">
-                <SelectTrigger class="w-[180px]">
-                  <SelectValue placeholder="Mode to write in" />
+                <SelectTrigger class="w-[190px]">
+                  <SelectValue placeholder="Tone to write in" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
-                    <SelectLabel>Mode</SelectLabel>
-                    <SelectItem value="informative"> Informative </SelectItem>
-                    <SelectItem value="story"> Story </SelectItem>
-                    <SelectItem value="advice"> Advice </SelectItem>
+                    <SelectLabel>Tone</SelectLabel>
+                    <div v-for="(tone, index) in tones" :key="index">
+                      <SelectItem :value="tone" class="capitalize">
+                        {{ tone }}
+                      </SelectItem>
+                    </div>
                   </SelectGroup>
                 </SelectContent>
               </Select>
@@ -140,6 +142,14 @@ const context = ref('')
 const postResult = ref('')
 const { $toast } = useNuxtApp()
 
+const tones = [
+  'professional',
+  'casual',
+  'humorous',
+  'inspirational',
+  'advisory',
+  'informative',
+]
 const handleSubmit = async (e: Event) => {
   e.preventDefault()
   generating.value = true
